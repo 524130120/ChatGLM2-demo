@@ -12,8 +12,8 @@
 #### 2.1 选用text2vec3作为embedding模型，将doctor_info_clear.txt分为块，并且向量化，储存到向量数据库中。
 
 #### 2.2 和用户交互开始时，需要先询问用户信息，参考（小程序：智能导诊）
-![]('./resources/智能导诊1.jpg')
-![]('./resources/智能导诊2.jpg')
+![]('./Langchain-ChatGLM-demo/resources/智能导诊1.jpg')
+![]('./Langchain-ChatGLM-demo/resources/智能导诊2.jpg')
 
 #### 2.3 设置提示词，系统提示词设定角色和主要任务，普通提示词设定任务细节信息。
 
@@ -33,5 +33,5 @@
 
 #### 3.5 微调600个epoch，每100个epoch记录结果。实验发现100个epoch效果较好，更大的epoch会发生过拟合。
 
-![]('./resources/问答-epoch-100.jpg')
+![]('./Langchain-ChatGLM-demo/resources/问答-epoch-100.jpg')
 微调epoch为100时的对话结果
