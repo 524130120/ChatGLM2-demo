@@ -33,5 +33,5 @@
 
 #### 3.5 微调600个epoch，每100个epoch记录结果。实验发现100个epoch效果较好，更大的epoch会发生过拟合。
 
-![3](./Langchain-ChatGLM-demo/resources/问答-epoch-100.jpg)
+![3](./Langchain-ChatGLM-demo/resources/问答-epoch-100.png)
 微调epoch为100时的对话结果
