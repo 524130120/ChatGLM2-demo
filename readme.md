@@ -21,15 +21,15 @@
 
 #### 2.5 将<用户信息>、<用户提问>、<系统提示词>、<普通提示词>、<检索得到的医生信息>拼接到一起，得到完整的提示词
 
-### 3. 模型调优（ChatGLM2-6B，参考：[ChatGLM2](https://github.com/THUDM/ChatGLM2-6B)）
+### 3. 模型调优（ChatGLM2-6B-main/ptuning，参考：[ChatGLM2](https://github.com/THUDM/ChatGLM2-6B)）
 
 #### 3.1 由于机器原因，只能使用ChatGLM-6B-int4模型，效果不理想，模型不能输出连贯语句。但在ChatGPT平台测试结果相对较好。因此考虑用ChatGPT生成虚拟数据集，对ChatGLM进行少量Epoch微调，目的是让ChatGLM-6B-int4能够学会根据信息生成连贯句子，同时防止过拟合。
 
 #### 3.2 生成的数据集采用问答对的形式，让ChatGPT生成问题，再让ChatGPT回答问题，记录问答结果。
 
-#### 3.3 生成问题的提示词: prompt.txt --> '生成问题'； 生成问答对的提示词：prompt.txt --> '生成回答'
+#### 3.3 生成问题的提示词: ptuning/knowledge/prompt.txt --> '生成问题'； 生成问答对的提示词：ptuning/prompt.txt --> '生成回答'
 
-#### 3.4 生成的数据集：train.json, dev.json；总共40个样本
+#### 3.4 生成的数据集：ptuning/knowledge/train.json, ptuning/knowledge/dev.json；总共40个样本
 
 #### 3.5 微调600个epoch，每100个epoch记录结果。实验发现100个epoch效果较好，更大的epoch会发生过拟合。
 
