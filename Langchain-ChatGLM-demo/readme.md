@@ -12,7 +12,7 @@
 #### 2.1 选用text2vec3作为embedding模型，将doctor_info_clear.txt分为块，并且向量化，储存到向量数据库中。
 
 #### 2.2 和用户交互开始时，需要先询问用户信息，参考（小程序：智能导诊）
-![1]('https://github.com/524130120/ChatGLM2-demo/blob/main/Langchain-ChatGLM-demo/resources/%E6%99%BA%E8%83%BD%E5%AF%BC%E8%AF%8A1.jpg')
+![1](''./resources/智能导诊2.jpg'')
 ![2]('./resources/智能导诊2.jpg')
 
 #### 2.3 设置提示词，系统提示词设定角色和主要任务，普通提示词设定任务细节信息。
