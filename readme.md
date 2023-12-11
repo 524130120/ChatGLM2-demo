@@ -27,7 +27,7 @@
 
 #### 3.2 生成的数据集采用问答对的形式，让ChatGPT生成问题，再让ChatGPT回答问题，记录问答结果。
 
-#### 3.3 生成问题的提示词: [ptuning/knowledge/prompt.txt](https://github.com/524130120/ChatGLM2-demo/tree/main/ChatGLM2-6B-main/ptuning/knowledge/prompt.txt) --> '生成问题'； 生成问答对的提示词：[ptuning/prompt.txt](https://github.com/524130120/ChatGLM2-demo/tree/main/ChatGLM2-6B-main/ptuning/knowledge/prompt.txt) --> '生成回答'
+#### 3.3 生成问题的提示词: [ptuning/knowledge/prompt.txt](https://github.com/524130120/ChatGLM2-demo/tree/main/ChatGLM2-6B-main/ptuning/knowledge/prompt.txt) --> '生成问题'； 生成问答对的提示词：[ptuning/knowledge/prompt.txt](https://github.com/524130120/ChatGLM2-demo/tree/main/ChatGLM2-6B-main/ptuning/knowledge/prompt.txt) --> '生成回答'
 
 #### 3.4 生成的数据集：[ptuning/knowledge/train.json](https://github.com/524130120/ChatGLM2-demo/tree/main/ChatGLM2-6B-main/ptuning/knowledge/train.json), [ptuning/knowledge/dev.json](https://github.com/524130120/ChatGLM2-demo/tree/main/ChatGLM2-6B-main/ptuning/knowledge/dev.json)；总共40个样本
 
